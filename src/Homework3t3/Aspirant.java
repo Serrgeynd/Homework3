@@ -1,23 +1,24 @@
 package Homework3t3;
 
 public class Aspirant extends Student {
-    String Study;
+    public String study;
+
+    public Aspirant(String firstName, String lastName, double averageMark, String study) {
+        super(
+                firstName,
+                lastName,
+                averageMark);
+        this.study = study;
+    }
 
 
     @Override
     public void getScholarship() {
-        if (averageMark == 5) Grant = 200;
-        else Grant = 180;
-    }
-
-
-    public static void main(String[] args) {
-        Student student = new Aspirant();
-        student.averageMark=5.0;
-        student.getScholarship();
-        System.out.println(student.Grant);
-
-
+        if (averageMark == 5) grant = 200;
+        else grant = 180; System.out.println(grant);
     }
 }
+
+
+
 
