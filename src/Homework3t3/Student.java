@@ -2,21 +2,35 @@ package Homework3t3;
 
 
 public class Student {
-    String firstName;
-    String lastName;
-    double averageMark;
-    int Grant;
+    public String firstName;
+    public String lastName;
+    public double averageMark;
+    public int grant;
 
-    public void getScholarship(){if (averageMark==5) Grant= 100;
-    else Grant=80;
+    public Student(String firstName, String lastName, double averageMark) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.averageMark = averageMark;
+
     }
-    public  static void main(String[]args) {
-        Student student = new Student();
-        student.averageMark=4.9;
-        student.getScholarship();
-        System.out.println(student.Grant);
+
+    public void getScholarship() {
+        if (averageMark == 5) grant = 100;
+        else grant = 80;
+        System.out.println(grant);
+    }
+
+    public static void main(String[] args) {
+
+        Student[] student = new Student[2];
+        student[0] = new Student("Иван", "Иванов", 5);
+        student[1] = new Aspirant("Василий", "Петров", 4.9, "Размножение кроликов");
+        for (int i = 0; i < 2; i++) {
+            student[i].getScholarship();
 
 
+        }
 
     }
 }
+
