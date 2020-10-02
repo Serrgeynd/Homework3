@@ -1,25 +1,27 @@
 package Homework3t2;
 
-public class Horse extends Animal{
+public class Horse extends Animal {
+    public String run;
+
+    public Horse(String food, String location, String run) {
+        super(food, location);
+        this.run = run;
+    }
+
+
     @Override
-    public  void makeNoise() {
-        System.out.println("Игого");
+    public void makeNoise() {
+        System.out.println("Говорит игого");
     }
 
     @Override
-    public void eat(String food){
+    public void eat() {
         System.out.println("Ест сено");
     }
-    public  static void main (String[]args){
-        String molt;
-        Animal animal = new Horse();
-        animal.makeNoise();
-        animal.food = "Meat";
-        animal.location = "stale";
-        molt = "Линяет";
-        animal.eat("Сено");
-        animal.sleep("Лошадь");
-        System.out.println("Еда:  "+animal.food + ",  Живет:  " + animal.location + ", Примечание:  " +molt );
 
+    @Override
+    public void sleep() {
+        System.out.println("Лошадь спит");
     }
+
 }
