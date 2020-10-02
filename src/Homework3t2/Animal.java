@@ -4,17 +4,23 @@ public class Animal {
     String food;
     String location;
 
-    public void makeNoise (){
+    public Animal(String food, String location) {
+        this.food = food;
+        this.location=location;
+    }
+
+    public void makeNoise() {
         System.out.println("говорит");
 
     }
-    public  void eat(String food){
-        System.out.println("Ест  "+food);
-                }
 
-            public void sleep(String name){
-        System.out.println(name+ "  спит");
-            }
+    public void eat() {
+        System.out.println("Ест");
+    }
+
+    public void sleep() {
+        System.out.println("спит");
+    }
 
 }
 
