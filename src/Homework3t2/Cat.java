@@ -4,30 +4,29 @@ import java.util.Date;
 
 
 public class Cat extends Animal {
+    public String scratc;
+
+    public Cat(String food, String location, String scratc) {
+        super(food, location);
+        this.scratc = scratc;
+    }
+
 
     @Override
     public void makeNoise() {
-        System.out.println("Мяу");
+        System.out.println("говорит Мяу");
     }
 
     @Override
-    public void eat(String food){
+    public void eat() {
         System.out.println("Ест мясо");
     }
 
-
-
-
-    public static void main(String[] args) {
-        String scratc;
-        Animal cat = new Cat();
-        cat.makeNoise();
-        cat.food = "Meat";
-        cat.location = "Flat22";
-        scratc = "Царапается";
-        cat.eat("Мясо");
-        cat.sleep("кошка");
-        System.out.println("Еда:  " + cat.food + ",  Живет:  " + cat.location + ", Примечание:  " + scratc);
-
+    @Override
+    public void sleep() {
+        System.out.println("Кошка спит");
     }
 }
+
+
+
