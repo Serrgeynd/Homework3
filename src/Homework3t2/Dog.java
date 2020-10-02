@@ -1,25 +1,24 @@
 package Homework3t2;
 
-public class Dog extends Animal{
+public class Dog extends Animal {
+    public String molt;
+
+    public Dog(String food, String location, String molt) {
+        super(food, location);
+        this.molt = molt;
+
+    }
+
+
     @Override
-    public  void makeNoise() {
+    public void makeNoise() {
         System.out.println("Гав");
     }
 
     @Override
-    public void eat(String food){
+    public void eat() {
         System.out.println("Ест мясо");
     }
-    public  static void main (String[]args){
-        String molt;
-        Animal animal = new Dog();
-        animal.makeNoise();
-        animal.food = "Meat";
-        animal.location = "doghouse";
-        molt = "Линяет";
-        animal.eat("Мясо");
-        animal.sleep("собака");
-        System.out.println("Еда:  "+animal.food + ",  Живет:  " + animal.location + ", Примечание:  " +molt );
 
-    }
+
 }
