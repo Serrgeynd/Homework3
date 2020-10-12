@@ -1,8 +1,8 @@
 package Homework3t2;
 
 public class Animal {
-    String food;
-    String location;
+    public  String food;
+    public String location;
 
     public Animal(String food, String location) {
         this.food = food;
