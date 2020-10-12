@@ -14,8 +14,11 @@ public class Student {
     }
 
     public void getScholarship() {
-        if (averageMark == 5) grant = 100;
-        else grant = 80;
+        if (averageMark == 5) {
+            grant = 100;
+        } else {
+            grant = 80;
+        }
         System.out.println(grant);
     }
 }
