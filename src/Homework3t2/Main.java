@@ -10,7 +10,5 @@ public class Main {
         animal[1] = new Dog("Кости", "Конура", "Линяет");
         animal[2] = new Horse("Сено", "Конюшня", "Быстро бегает");
         veterinary.treatAnimal(animal[1]);
-
-
     }
 }
