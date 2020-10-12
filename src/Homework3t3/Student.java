@@ -11,7 +11,6 @@ public class Student {
         this.firstName = firstName;
         this.lastName = lastName;
         this.averageMark = averageMark;
-
     }
 
     public void getScholarship() {
@@ -19,18 +18,8 @@ public class Student {
         else grant = 80;
         System.out.println(grant);
     }
-
-    public static void main(String[] args) {
-
-        Student[] student = new Student[2];
-        student[0] = new Student("Иван", "Иванов", 5);
-        student[1] = new Aspirant("Василий", "Петров", 4.9, "Размножение кроликов");
-        for (int i = 0; i < 2; i++) {
-            student[i].getScholarship();
-
-
-        }
-
-    }
 }
+
+
+
 
